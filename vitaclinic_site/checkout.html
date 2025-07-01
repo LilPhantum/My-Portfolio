@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – VitaClinic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">VitaClinic</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-icon">&#9776;</label>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="checkout-form">
+    <h1>Complete Your Subscription</h1>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="John Doe" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label for="card">Card Information</label>
+      <input type="text" id="card" placeholder="1234 5678 9012 3456" required>
+
+      <button type="submit">Submit Payment</button>
+    </form>
+  </section>
+
+  <footer class="custom-footer">
+    <div class="footer-left">VitaClinic ©</div>
+    <div class="footer-right">
+      <nav class="footer-subnav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

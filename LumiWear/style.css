@@ -1,0 +1,18 @@
+.photo-frame {
+  background: #fceee0; /* light background inside the frame */
+  padding: 3px;
+  border: 3px solid #8B5E3C; /* dark brown frame border */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.album img {
+    width: 170px;
+    height: auto;
+    
+}
+
+.album, .card {
+    align-items: center;
+}

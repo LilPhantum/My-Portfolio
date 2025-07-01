@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipes | TasteNest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="logo">TasteNest</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-icon">&#9776;</label>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Recipes</a>
+      <a href="pricing.html">Plans</a>
+      <a href="checkout.html">Join</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main class="recipe-main container">
+
+    <!-- CATEGORY ACCORDION -->
+    <section class="category-accordion">
+
+      <!-- Repeat for each category -->
+      <div class="category-box rec">
+        <input type="checkbox" id="toggle-breakfast">
+        <label class="category-label" for="toggle-breakfast">Breakfast Ideas</label>
+
+        <div class="recipes-list">
+          <!-- RECIPE ITEM -->
+          <div class="recipe-item">
+            <input type="checkbox" id="breakfast-1">
+            <label for="breakfast-1" class="recipe-label">1. Avocado Toast</label>
+            <div class="recipe-content">
+              <p><strong>Ingredients:</strong> Bread, avocado, lemon, salt, pepper</p>
+              <ol>
+                <li>Toast the bread slices.</li>
+                <li>Mash the avocado with lemon juice, salt and pepper.</li>
+                <li>Spread the mixture and serve.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="recipe-item">
+            <input type="checkbox" id="breakfast-2">
+            <label for="breakfast-2" class="recipe-label">2. Banana Pancakes</label>
+            <div class="recipe-content">
+              <p><strong>Ingredients:</strong> Bananas, eggs, flour, milk</p>
+              <ol>
+                <li>Mash bananas and whisk with eggs and flour.</li>
+                <li>Pour onto hot pan and cook.</li>
+                <li>Serve with honey or syrup.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- You can duplicate for 3–20 -->
+        </div>
+      </div>
+
+      <div class="category-box rec">
+        <input type="checkbox" id="toggle-global">
+        <label class="category-label" for="toggle-global">Global Cuisines</label>
+        <div class="recipes-list">
+          <!-- Global recipes 1-20 -->
+          <div class="recipe-item">
+            <input type="checkbox" id="global-1">
+            <label for="global-1" class="recipe-label">1. Tacos Al Pastor</label>
+            <div class="recipe-content">
+              <p><strong>Ingredients:</strong> Pork, pineapple, tortillas, spices</p>
+              <ol>
+                <li>Marinate pork in spices and pineapple.</li>
+                <li>Grill and slice.</li>
+                <li>Assemble in tortilla and serve.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-box rec">
+        <input type="checkbox" id="toggle-desserts">
+        <label class="category-label" for="toggle-desserts">Desserts</label>
+        <div class="recipes-list">
+          <div class="recipe-item">
+            <input type="checkbox" id="dessert-1">
+            <label for="dessert-1" class="recipe-label">1. Chocolate Brownies</label>
+            <div class="recipe-content">
+              <p><strong>Ingredients:</strong> Cocoa, sugar, flour, eggs, butter</p>
+              <ol>
+                <li>Mix ingredients.</li>
+                <li>Bake for 25 minutes.</li>
+                <li>Let cool and serve.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-box rec">
+        <input type="checkbox" id="toggle-vegetarian">
+        <label class="category-label" for="toggle-vegetarian">Vegetarian</label>
+        <div class="recipes-list">
+          <div class="recipe-item">
+            <input type="checkbox" id="veg-1">
+            <label for="veg-1" class="recipe-label">1. Lentil Soup</label>
+            <div class="recipe-content">
+              <p><strong>Ingredients:</strong> Lentils, onions, carrots, spices</p>
+              <ol>
+                <li>Simmer lentils with spices.</li>
+                <li>Add vegetables.</li>
+                <li>Serve hot with bread.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-box rec">
+        <input type="checkbox" id="toggle-quick">
+        <label class="category-label" for="toggle-quick">Quick & Easy</label>
+        <div class="recipes-list">
+          <div class="recipe-item">
+            <input type="checkbox" id="quick-1">
+            <label for="quick-1" class="recipe-label">1. Microwave Mug Cake</label>
+            <div class="recipe-content">
+              <p><strong>Ingredients:</strong> Flour, sugar, milk, cocoa powder</p>
+              <ol>
+                <li>Mix ingredients in a mug.</li>
+                <li>Microwave for 90 seconds.</li>
+                <li>Let cool and enjoy.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">TasteNest ©</div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Categories</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

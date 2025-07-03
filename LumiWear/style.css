@@ -16,3 +16,7 @@
 .album, .card {
     align-items: center;
 }
+
+.hero {
+  height: 500px;
+}

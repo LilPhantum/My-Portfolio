@@ -139,7 +139,7 @@ body {
 }
 
 /* CONTACT RIGHT */
-.contact {
+.contact button {
     background-color: rgb(38, 38, 88);
     border-radius: 15px;
     border: 1px solid #5656c7;
@@ -148,17 +148,12 @@ body {
     box-shadow: -1px -1px 1px #ffffff96;
     padding: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
-.contact:hover {
+.contact button:hover {
     background-color: rgb(13, 13, 31);
     
 }
-
-.contact a {
-    color: whitesmoke;
-    padding: 5px;
-}
-
 
 /* ============================================
 ====================MAIN CONTENT==================
@@ -350,7 +345,7 @@ body {
 ==================================== */
 .services-wrapper {
     width: 100%;
-     background: linear-gradient(180deg, #e0e0ff 60%,  #acacfc);
+     background: linear-gradient(180deg, #e0e0ff,  #acacfc);
 }
 
 /* TEXT AND CARD SEPERATOR */
@@ -391,8 +386,8 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.219);
-  box-shadow: 1px -1px 5px #000;
+  border: 2px solid rgba(255, 255, 255, 0.219);
+  box-shadow: 1px -1px 5px #00000042;
   overflow: hidden;
   filter: grayscale(60%);
   transition: transform 0.5s ease, filter 0.5s ease, border 0.5s ease;
@@ -514,22 +509,21 @@ body {
 .sec img {
     width: 100%;
     margin-bottom: 20px;
-    border-radius: 15px;
-    border: 1px solid #000000;
+    border-radius: 11px;
+    border: .5px solid #0000004f;
     filter: grayscale(60%);
-    box-shadow: -1px 1px 10px #000;
-    transition: transform 0.5s ease, filter 0.5s ease;
+    box-shadow: -1px 1px 10px #0000003d;
+    transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
 }
 
 .sec img:hover {
+    
     transform: scale(0.98);
     filter: grayscale(0%) ;
 }
 
 @media (max-width: 768px) {
-    .sec {
-        
-    }
+    
 
     .sec img {
         filter: grayscale(0%) ;

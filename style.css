@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-	background: white;	
+	background: #F9FDFE;	
     min-width: 320px;
     min-height: 200vh;
 }
@@ -83,7 +83,7 @@ body {
 .primary-header {
     justify-content: center;
     width: 100%;
-    background-color: rgba(13, 13, 31, 0.884);
+    background-color: rgb(13, 13, 31);
     border-bottom: 1px solid rgb(38, 38, 88);
     backdrop-filter: blur(20px);
     color: whitesmoke;
@@ -162,7 +162,7 @@ body {
 /* GRADIENT BK */
 .main-wrapper {
     width: 100%;
-    background: linear-gradient(45deg, #171736, #1c1c5f, #5656c7);
+    background: linear-gradient(#1c1c5f, #5656c7);
     background-size: 600% 600%;
     animation: gradient-animation 18s ease infinite;
 }
@@ -184,17 +184,7 @@ body {
 
 
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 
 /* HERO TEXT */
 .hero{
@@ -307,7 +297,7 @@ body {
 .hero-img {
     padding: 0 15px;
     padding-top: 30px;
-    background-color: #000000c9;
+    background-color: #080838;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 1px 1px 10px #ffffff31;
@@ -345,7 +335,6 @@ body {
 ==================================== */
 .services-wrapper {
     width: 100%;
-     background: linear-gradient(180deg, #e0e0ff,  #acacfc);
 }
 
 /* TEXT AND CARD SEPERATOR */
@@ -469,7 +458,7 @@ body {
 ================================================= */
 
 .album-wrapper {
-    background-color: #d8d8ff;
+
 }
 
 .album {
@@ -556,4 +545,38 @@ body {
     margin-top: 30px;
     color: whitesmoke;
 
+}
+
+
+/* 
+=================================================
+==================JAVA ANIMATION=================
+================================================= */
+/* Base animation setup */
+.fade-up, .fade-down, .fade-left-right, .fade-right-left {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* Individual animations */
+.fade-up.animate,
+.fade-down.animate,
+.fade-left-right.animate,
+.fade-right-left.animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fade-down {
+  transform: translateY(-30px);
+}
+.fade-up {
+  transform: translateY(30px);
+}
+.fade-left-right {
+  transform: translateX(-30px);
+}
+.fade-right-left {
+  transform: translateX(30px);
 }

@@ -241,7 +241,8 @@ table {
     top: 0;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 
 .sub-bar {
@@ -499,6 +500,9 @@ main {
 }
 
 .download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     background-color: transparent;
     color: rgb(59, 59, 59);
@@ -613,15 +617,18 @@ main {
 
 
 .slider button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     pointer-events: auto; /* re-enable click */
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: rgba(192, 192, 192, 0.185);
+    background: rgba(230, 230, 230, 0.363);
     border: none;
     cursor: pointer;
     font-size: 24px;
-    transition: background 0.3s;
+    transition: background 0.4s;
     margin: 5px;
     
 }
@@ -632,15 +639,15 @@ main {
 
 
 
-.prev svg,
-.next svg {
+.navigation svg {
     padding: 0px;
     margin: 0px;
-    width: 22px;
+    width: 20px;
     height: auto;
-    fill: #777777;
-    vertical-align: middle;
+    fill: #303030;
 }
+
+
 
 @media (min-width: 1054px) {
     .carousel {
@@ -709,6 +716,9 @@ main {
 
 
 .slider .play-pause-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 70px;
   left: 25px;
@@ -722,14 +732,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
+  transition: background 0.5s ease;
   z-index: 100;
 }
 
 .slider .play-pause-btn svg {
-    width: 30px;
-    height: 30px;
-    
+    width: 25px;
+    height: auto;
+    fill: #636363;
 }
 
 

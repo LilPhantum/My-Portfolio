@@ -241,8 +241,8 @@ table {
     top: 0;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .sub-bar {
@@ -594,7 +594,6 @@ main {
 
 .slides .item {
   opacity: 0;
-  transform: scale(0.97); /* slightly shrink for morph effect */
   transition: opacity 0.6s ease, transform 0.6s ease;
   position: absolute;
   top: 0;
@@ -737,6 +736,8 @@ main {
 }
 
 .slider .play-pause-btn svg {
+    padding: 0;
+    margin: 0;
     width: 25px;
     height: auto;
     fill: #636363;
@@ -754,16 +755,16 @@ main {
 }
 
 .primary-footer {
+    max-width: 800px;
     align-items: center;
     margin: 0 auto;
     width: 95%;
-    padding: 10px 0;
     font-size: 17px;
     color: #727272;
 }
 
 .primary-footer p {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .primary-footer a {
